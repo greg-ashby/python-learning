@@ -150,5 +150,4 @@ df.index.name='Greg'
 for attribute in dir(df):
     attr = getattr(df, attribute)
     if not attribute.startswith('_') and hasattr(attr, '__call__'):
-        pass
-        # print attribute
+        print attribute
